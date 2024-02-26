@@ -11,6 +11,7 @@ import java.util.List;
 @Getter // Genera los métodos getters
 @Setter // Genera los métodos setters
 @NoArgsConstructor // Genera un constructor sin argumentos
+
 @ToString // Genera el método toString
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)  // Genera los métodos equals y hashCode
 public class Cliente implements Serializable {
@@ -24,5 +25,11 @@ public class Cliente implements Serializable {
     private String email;
     private List<String> telefonos;
 
-
+    @Builder
+    public Cliente(String cedula, String nombre, String email, List<String> telefonos) {
+        this.cedula = cedula;
+        this.nombre = nombre;
+        this.email = email;
+        this.telefonos = telefonos;
+    }
 }
