@@ -1,4 +1,4 @@
-package modelo;
+package practica.modelo;
 
 public enum TipoProducto {
     ALIMENTO(0), BEBIDA(1), PAPELERIA(2), HIGIENE(3);

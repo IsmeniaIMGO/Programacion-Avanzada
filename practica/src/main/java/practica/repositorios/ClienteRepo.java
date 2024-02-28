@@ -1,6 +1,6 @@
-package repositorios;
+package practica.repositorios;
 
-import modelo.Cliente;
+import practica.modelo.Cliente;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
