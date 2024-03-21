@@ -1,10 +1,12 @@
 package practica.servicios;
 
+import org.springframework.stereotype.Service;
 import practica.dto.ActualizarClienteDTO;
 import practica.dto.ItemClienteDTO;
 import practica.dto.RegistroClienteDTO;
 
 import java.util.List;
+
 
 public interface ClienteServicio {
 

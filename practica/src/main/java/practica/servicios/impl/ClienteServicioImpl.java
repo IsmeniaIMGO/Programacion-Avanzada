@@ -95,7 +95,7 @@ public class ClienteServicioImpl implements ClienteServicio {
         Optional<Cliente> optionalCliente = clienteRepo.findById(idCuenta);
 
         if (optionalCliente.isEmpty()) {
-            new ResourceNotFoundException("No se encontró el cliente con ID: " + idCuenta);
+            throw new ResourceNotFoundException("No se encontró el cliente con ID: " + idCuenta);
         }
 
         return optionalCliente.get();
