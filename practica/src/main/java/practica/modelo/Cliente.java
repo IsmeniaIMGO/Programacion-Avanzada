@@ -23,13 +23,11 @@ public class Cliente implements Serializable {
     private String cedula;
     private String nombre;
     private String email;
-    private List<String> telefonos;
 
     @Builder
-    public Cliente(String cedula, String nombre, String email, List<String> telefonos) {
+    public Cliente(String cedula, String nombre, String email) {
         this.cedula = cedula;
         this.nombre = nombre;
         this.email = email;
-        this.telefonos = telefonos;
     }
 }
